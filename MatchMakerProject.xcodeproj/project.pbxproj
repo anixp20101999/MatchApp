@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		D3DF6DA42D660DDD0004AF2E /* MatchMateModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D3DF6DA22D660DDD0004AF2E /* MatchMateModel.xcdatamodeld */; };
+		D3F963F42D65C85300FBB2EA /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = D3F963F32D65C85300FBB2EA /* SDWebImageSwiftUI */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		D33B2FC02D6502E20021516E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +32,7 @@
 		D33B2FAE2D6502E00021516E /* MatchMakerProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MatchMakerProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D33B2FBF2D6502E20021516E /* MatchMakerProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MatchMakerProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D33B2FC92D6502E20021516E /* MatchMakerProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MatchMakerProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3DF6DA32D660DDD0004AF2E /* MatchMateModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MatchMateModel.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -52,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3F963F42D65C85300FBB2EA /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +82,7 @@
 		D33B2FA52D6502E00021516E = {
 			isa = PBXGroup;
 			children = (
+				D3DF6DA22D660DDD0004AF2E /* MatchMateModel.xcdatamodeld */,
 				D33B2FB02D6502E00021516E /* MatchMakerProject */,
 				D33B2FC22D6502E20021516E /* MatchMakerProjectTests */,
 				D33B2FCC2D6502E20021516E /* MatchMakerProjectUITests */,
@@ -112,6 +120,7 @@
 			);
 			name = MatchMakerProject;
 			packageProductDependencies = (
+				D3F963F32D65C85300FBB2EA /* SDWebImageSwiftUI */,
 			);
 			productName = MatchMakerProject;
 			productReference = D33B2FAE2D6502E00021516E /* MatchMakerProject.app */;
@@ -195,6 +204,9 @@
 			);
 			mainGroup = D33B2FA52D6502E00021516E;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				D3F963F22D65C85300FBB2EA /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = D33B2FAF2D6502E00021516E /* Products */;
 			projectDirPath = "";
@@ -236,6 +248,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3DF6DA42D660DDD0004AF2E /* MatchMateModel.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -591,6 +604,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D3F963F22D65C85300FBB2EA /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D3F963F32D65C85300FBB2EA /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D3F963F22D65C85300FBB2EA /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		D3DF6DA22D660DDD0004AF2E /* MatchMateModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D3DF6DA32D660DDD0004AF2E /* MatchMateModel.xcdatamodel */,
+			);
+			currentVersion = D3DF6DA32D660DDD0004AF2E /* MatchMateModel.xcdatamodel */;
+			path = MatchMateModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = D33B2FA62D6502E00021516E /* Project object */;
 }
