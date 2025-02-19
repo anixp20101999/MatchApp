@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-@main
+
 struct MatchMakerProjectApp: App {
     var body: some Scene {
         WindowGroup {
